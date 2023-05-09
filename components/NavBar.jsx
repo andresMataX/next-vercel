@@ -1,19 +1,30 @@
 import { Inter } from 'next/font/google'
+import Link from 'next/link'
+import styles from './NavBar.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const NavBar = () => {
   return (
     <nav>
-      <a className={`${inter.className}`} href='/'>
+      <Link
+        className={`${inter.className} ${styles['menu-container']}`}
+        href='/'
+      >
         Home
-      </a>
-      <a className={`${inter.className}`} href='/about'>
+      </Link>
+      <Link
+        className={`${inter.className} ${styles['menu-container']}`}
+        href='/about'
+      >
         About
-      </a>
-      <a className={`${inter.className}`} href='/contact'>
+      </Link>
+      <Link
+        className={`${inter.className} ${styles['menu-container']}`}
+        href='/contact'
+      >
         Contact
-      </a>
+      </Link>
     </nav>
   )
 }

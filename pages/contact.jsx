@@ -6,12 +6,12 @@ import { NavBar } from '@/components/NavBar'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function HomePage() {
+export default function ContactPage() {
   return (
     <>
       <Head>
-        <title>About - Andrés</title>
-        <meta name='description' content='Home page' />
+        <title>Contact - Andrés</title>
+        <meta name='description' content='Contact page' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
@@ -20,12 +20,12 @@ export default function HomePage() {
 
       <main className={`${styles.main} ${inter.className}`}>
         <div className={styles.description}>
-          <h1>Home Page</h1>
+          <h1>Contact Page</h1>
         </div>
 
         <div className={styles.grid}>
-          <Link className={styles.card} href='/about'>
-            Ir a About
+          <Link className={styles.card} href='/'>
+            Ir a Home
           </Link>
         </div>
       </main>

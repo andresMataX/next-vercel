@@ -1,30 +1,11 @@
-import { Inter } from 'next/font/google'
-import Link from 'next/link'
-import styles from './NavBar.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import ActiveLink from './ActiveLink'
 
 export const NavBar = () => {
   return (
     <nav>
-      <Link
-        className={`${inter.className} ${styles['menu-container']}`}
-        href='/'
-      >
-        Home
-      </Link>
-      <Link
-        className={`${inter.className} ${styles['menu-container']}`}
-        href='/about'
-      >
-        About
-      </Link>
-      <Link
-        className={`${inter.className} ${styles['menu-container']}`}
-        href='/contact'
-      >
-        Contact
-      </Link>
+      <ActiveLink text='Home' href='/' />
+      <ActiveLink text='About' href='/about' />
+      <ActiveLink text='Contact' href='/contact' />
     </nav>
   )
 }

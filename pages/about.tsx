@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import MainLayout from '@/components/layouts/MainLayout'
-import WhiteLayout from '@/components/layouts/WhiteLayout'
+import MainLayout from '../components/layouts/MainLayout'
+import { WhiteLayout } from '../components/layouts/WhiteLayout'
 
 export default function AboutPage() {
   return (
@@ -18,7 +18,7 @@ export default function AboutPage() {
   )
 }
 
-AboutPage.getLayout = function getLayout(page) {
+AboutPage.getLayout = function getLayout(page: any) {
   return (
     <MainLayout>
       <WhiteLayout>{page}</WhiteLayout>

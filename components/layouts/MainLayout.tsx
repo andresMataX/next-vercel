@@ -3,9 +3,13 @@ import { Inter } from 'next/font/google'
 import styles from './MainLayout.module.css'
 import { NavBar } from '../NavBar'
 
+interface Props {
+  children: React.ReactNode
+}
+
 const inter = Inter({ subsets: ['latin'] })
 
-export default function MainLayout({ children }) {
+export default function MainLayout({ children }: Props) {
   return (
     <>
       <Head>

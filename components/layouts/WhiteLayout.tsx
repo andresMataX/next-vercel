@@ -1,6 +1,10 @@
-import React from 'react'
+import { FC } from 'react'
 
-export default function WhiteLayout({ children }) {
+interface Props {
+  children: React.ReactNode
+}
+
+export const WhiteLayout = ({ children }: Props) => {
   return (
     <div
       style={{

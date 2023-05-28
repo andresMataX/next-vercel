@@ -1,11 +1,11 @@
 import Link from 'next/link'
-import MainLayout from '@/components/layouts/MainLayout'
+import MainLayout from '../../components/layouts/MainLayout'
 
-export default function HomePage() {
+export default function PricingPage() {
   return (
     <MainLayout>
       <div className={'description'}>
-        <h1>Home Page</h1>
+        <h1>Pricing Page</h1>
       </div>
 
       <div className={'grid'}>
